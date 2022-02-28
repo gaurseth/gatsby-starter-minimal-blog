@@ -141,7 +141,7 @@ module.exports = {
       resolve: "gatsby-source-strapi",
       options: {
         apiURL: process.env.API_URL || "http://strapiallyzz.eastus.cloudapp.azure.com:1337",
-        collectionTypes: ["blog", "user"],
+        collectionTypes: ["blog"],
        // singleTypes: [`homepage`, `global`],
         queryLimit: 1000,
       },
