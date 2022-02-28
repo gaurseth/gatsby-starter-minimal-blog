@@ -137,6 +137,14 @@ module.exports = {
       },
     },
     `gatsby-plugin-gatsby-cloud`,
+    {
+      resolve: "gatsby-source-strapi",
+      options: {
+        apiURL: process.env.API_URL || "http://strapiallyzz.eastus.cloudapp.azure.com:1337",
+        collectionTypes: ["blog", "user"],
+        //singleTypes: [`homepage`, `global`],
+        queryLimit: 1000,
+      },
     shouldAnalyseBundle && {
       resolve: `gatsby-plugin-webpack-bundle-analyser-v2`,
       options: {
