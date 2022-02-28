@@ -145,6 +145,7 @@ module.exports = {
         //singleTypes: [`homepage`, `global`],
         queryLimit: 1000,
       },
+    },
     shouldAnalyseBundle && {
       resolve: `gatsby-plugin-webpack-bundle-analyser-v2`,
       options: {
